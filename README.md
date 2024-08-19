@@ -55,13 +55,16 @@ Para instalar y ejecutar este proyecto en tu máquina local, sigue los siguiente
    git clone https://github.com/tu-usuario/tu-repositorio.git
 
 2. Navega al directorio del proyecto:
+   ```bash
    cd tu-repositorio
 
-3. Instala las dependencias:
+4. Instala las dependencias:
+   ```bash
    npm install
 
-4. Inicia la aplicación:
-    npm start
+6. Inicia la aplicación:
+   ```bash
+   npm start
 
 Esto iniciará la aplicación en modo de desarrollo. Abre http://localhost:3000 en tu navegador para verla en acción.
 
