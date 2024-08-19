@@ -37,7 +37,7 @@ function App() {
   return (
     <main>
       <aside>
-        <h1>Prueba técnica de React</h1>
+        <h1>Element Management</h1>
         <h2>Añadir y eliminar elementos de una lista</h2>
 
         <form onSubmit={handleSubmit} aria-label="Añadir elementos a la lista">
