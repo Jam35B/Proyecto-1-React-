@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+# React Project - Element Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Este es un proyecto de ejemplo en React que permite a los usuarios añadir y eliminar elementos de una lista. El proyecto utiliza hooks personalizados para manejar la lógica de los elementos y la gestión de SEO (Search Engine Optimization) en la página.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- Añadir elementos a una lista con un identificador único.
+- Eliminar elementos de la lista.
+- Actualización dinámica del título de la página basado en el número de elementos en la lista.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Estructura del Proyecto
 
-- Configure the top-level `parserOptions` property like this:
+El proyecto está organizado de la siguiente manera:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+├── public/
+├── src/
+│ ├── components/
+│ │ └── Item.tsx
+│ ├── hooks/
+│ │ ├── useItems.ts
+│ │ └── useSEO.ts
+│ ├── App.css
+│ ├── App.tsx
+│ ├── index.tsx
+│ └── ...
+├── package.json
+└── README.md
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **App.tsx**: Componente principal que contiene la estructura de la aplicación y la lógica para manejar el formulario de añadir elementos.
+- **components/Item.tsx**: Componente que renderiza cada elemento de la lista.
+- **hooks/useItems.ts**: Hook personalizado que maneja la lógica para añadir y eliminar elementos.
+- **hooks/useSEO.ts**: Hook personalizado para manejar la optimización SEO (título y descripción) del sitio.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Instalación
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Para instalar y ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+
+2. Navega al directorio del proyecto:
+   cd tu-repositorio
+
+3. Instala las dependencias:
+   npm install
+
+4. Inicia la aplicación:
+    npm start
+
+Esto iniciará la aplicación en modo de desarrollo. Abre http://localhost:3000 en tu navegador para verla en acción.
+
+Uso
+Añadir un Elemento: Introduce texto en el campo de entrada y haz clic en "Añadir Elemento a la lista". El nuevo elemento se añadirá a la lista.
+Eliminar un Elemento: Haz clic en el botón asociado a cada elemento para eliminarlo de la lista.
+Tecnologías Utilizadas
+React: Librería de JavaScript para construir interfaces de usuario.
+TypeScript: Superconjunto de JavaScript que añade tipado estático al lenguaje.
+CSS: Para loa estilos de la aplicación.
+Contribución
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+Haz un fork del repositorio.
+Crea una rama nueva (git checkout -b feature/nueva-funcionalidad).
+Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
+Sube tus cambios (git push origin feature/nueva-funcionalidad).
+Abre una Pull Request.
+
+
+
+
+
+
+
+
