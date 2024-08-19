@@ -15,17 +15,29 @@ Este es un proyecto de ejemplo en React que permite a los usuarios añadir y eli
 El proyecto está organizado de la siguiente manera:
 
 ├── public/
+
 ├── src/
+
 │ ├── components/
+
 │ │ └── Item.tsx
+
 │ ├── hooks/
+
 │ │ ├── useItems.ts
+
 │ │ └── useSEO.ts
+
 │ ├── App.css
+
 │ ├── App.tsx
+
 │ ├── index.tsx
+
 │ └── ...
+
 ├── package.json
+
 └── README.md
 
 - **App.tsx**: Componente principal que contiene la estructura de la aplicación y la lógica para manejar el formulario de añadir elementos.
